@@ -5,6 +5,9 @@ import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { ContractType, ExperienceLevel, Island, Sector } from "@prisma/client";
 
+export const dynamic = 'force-dynamic'; 
+
+
 // APAGAR UMA VAGA (DELETE)
 export async function DELETE(req: Request, { params }: { params: { id: string } }) {
   try {

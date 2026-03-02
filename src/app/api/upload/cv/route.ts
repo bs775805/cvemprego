@@ -6,6 +6,9 @@ import { prisma } from "@/lib/prisma";
 import { r2 } from "@/lib/r2";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 
+export const dynamic = 'force-dynamic'; 
+
+
 export async function POST(req: Request) {
   try {
     const session = await getServerSession(authOptions);
