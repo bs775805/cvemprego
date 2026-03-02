@@ -9,6 +9,8 @@ import {
   Fish, Plane, ChevronRight
 } from "lucide-react";
 
+export const dynamic = 'force-dynamic';
+
 // --- Dicionários para tradução de Enums ---
 const ilhasMap: Record<string, string> = {
   SANTIAGO: "Santiago", SAO_VICENTE: "São Vicente", SAL: "Sal", 

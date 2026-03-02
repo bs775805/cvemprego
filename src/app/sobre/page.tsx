@@ -8,6 +8,8 @@ import {
   Map
 } from "lucide-react";
 
+export const dynamic = 'force-dynamic';
+
 export default async function SobrePage() {
   // 1. Buscar estatísticas reais para mostrar o crescimento
   const [totalCandidatos, totalEmpresas, totalVagas] = await Promise.all([

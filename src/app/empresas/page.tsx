@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import { Building2, MapPin, ChevronRight } from "lucide-react";
 
+export const dynamic = 'force-dynamic';
+
 export default async function EmpresasPublicoPage() {
   const empresas = await prisma.companyProfile.findMany({
     include: { _count: { select: { jobListings: { where: { status: "ACTIVE" } } } } },
